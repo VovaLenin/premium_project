@@ -71,12 +71,14 @@ body {
 .header__contacts {
   margin-right: 120px;
   margin-top: 6px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
   margin-bottom: 6px;
 }
 
 .header__contacts-left {
-  position: absolute; /* Расстояние между иконкой и линией */
+  margin-right: 10px; /* Расстояние между иконкой и линией */
 }
 
 .separator {
@@ -87,7 +89,7 @@ body {
 }
 
 .contact-info {
-  position: absolute;
+  display: flex;
   flex-direction: column;
 }
 
