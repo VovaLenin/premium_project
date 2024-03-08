@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+:root {
+  --dark-blue: #002343;
+  --orange: #e87817;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #fff;
+  font-weight: 400;
+  color: #20212d;
+  max-width: 1920px;
+  width: 1920px;
+  /* background-attachment: fixed;  */
+  /* overflow: auto; */
+}
+
+.header {
+  display: flex;
+  max-width: 1920px;
+  width: 1920px;
+  margin: 0 auto;
+  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  background-image: url(../images/header-logo.svg);
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 54px;
+  flex: 1;
+  margin-right: 80px;
+  margin-bottom: 5px;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  display: flex;
+  flex: 1;
+}
+
+.header__link {
+  color: #20212d;
+  text-decoration: none;
+}
+
+.header__link--active {
+  color: #e87817;
+}
+
+.header__contacts {
+  margin-right: 120px;
+  margin-top: 6px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.header__contacts-left {
+  position: absolute; /* Расстояние между иконкой и линией */
+}
+
+.separator {
+  width: 1px;
+  height: 20px; /* Высота линии */
+  background-color: #000; /* Цвет линии */
+  margin: 0 10px; /* Расстояние между линией и текстом */
+}
+
+.contact-info {
+  position: absolute;
+  flex-direction: column;
+}
+
+.phone-number,
+.email {
+  margin: 0; /* Убираем отступы у параграфов */
+  display: block;
+  color: var(--dark-blue);
+}
+
+.phone-number {
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.email {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* Стили для кнопки */
+.phone-button {
+  width: 27px;
+  height: 27px;
+  padding: 0; /* Убираем внутренний отступ */
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  flex: 1;
+}
+
+.header__button {
+  padding: 15px 37px 10px 37px;
+  border-radius: 4px;
+  background: rgb(232, 120, 23);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
