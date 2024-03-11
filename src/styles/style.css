@@ -308,11 +308,11 @@ body {
 .footer {
   width: 100%;
   background: rgb(246, 246, 246);
+  font-size: 12px;
 }
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
   height: 377px;
   width: 1400px;
   margin: 0 auto;
@@ -328,12 +328,12 @@ body {
 }
 
 .footer__contacts {
-  grid-column: 1/3;
+  width: 230px;
+  margin-right: 50px;
 }
 
 .footer__contacts p {
   margin-bottom: 12px;
-  font-size: 12px;
   font-weight: 300;
   line-height: 18px;
 }
@@ -351,5 +351,17 @@ body {
 }
 
 .footer__services {
-  grid-column: 3/10;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  line-height: 20px;
+}
+
+.services__list li {
+  margin-bottom: 10px;
+  opacity: 0.6;
+  flex: 1 50%;
 }
