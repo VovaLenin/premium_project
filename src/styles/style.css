@@ -17,7 +17,7 @@ body {
   font-weight: 400;
   color: #20212d;
   max-width: 1920px;
-  width: 1920px;
+  /* width: 1920px; */
   /* background-attachment: fixed;  */
   /* overflow: auto; */
 }
@@ -25,14 +25,22 @@ body {
 .header {
   display: flex;
   max-width: 1920px;
-  width: 1920px;
-  margin: 0 auto;
+  width: 100%;
+  /* width: 1920px; */
+  height: 100px;
   font-weight: 500;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 40px;
+  padding: 0 40px;
   font-size: 18px;
   box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+  background: rgb(255, 255, 255);
+}
+
+.header_placeholder {
+  height: 100px;
 }
 
 .header__section {
@@ -48,7 +56,7 @@ body {
   height: 54px;
   flex: 1;
   margin-right: 80px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .header__list {
@@ -64,8 +72,9 @@ body {
   text-decoration: none;
 }
 
-.header__link--active {
-  color: #e87817;
+.header__link--active,
+.header__link:hover {
+  color: var(--orange);
 }
 
 .header__contacts {
@@ -77,15 +86,12 @@ body {
   margin-bottom: 6px;
 }
 
-.header__contacts-left {
-  margin-right: 10px; /* Расстояние между иконкой и линией */
-}
-
 .separator {
   width: 1px;
-  height: 20px; /* Высота линии */
-  background-color: #000; /* Цвет линии */
-  margin: 0 10px; /* Расстояние между линией и текстом */
+  height: 35px; /* Высота линии */
+  background: var(--dark-blue);
+  opacity: 0.15;
+  margin: 0 20px 0 5px; /* Расстояние между линией и текстом */
 }
 
 .contact-info {
@@ -123,10 +129,227 @@ body {
 }
 
 .header__button {
-  padding: 15px 37px 10px 37px;
+  padding: 18px 37px 13px 37px;
   border-radius: 4px;
-  background: rgb(232, 120, 23);
+  background: var(--orange);
   border: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
+  cursor: pointer;
+}
+
+.banner-slider {
+  width: 100%;
+  max-width: 1920px;
+  margin-bottom: 70px;
+}
+
+.banner-slider__slide {
+  /* width: 100%; */
+  height: auto;
+  background: url("../images/slide-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: var(--dark-blue);
+  display: flex;
+}
+
+.slide__main {
+  width: 1400px;
+  height: 740px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.slide-info {
+  margin: 0;
+  width: 690px;
+  align-self: center;
+  position: relative;
+  margin-bottom: 21px;
+}
+
+.slide-triangles {
+  position: absolute;
+  height: 82px;
+  width: 53px;
+}
+
+.slide-triangles__top {
+  top: -140px;
+}
+
+.slide-triangles__bottom {
+  bottom: -90px;
+  right: 30px;
+}
+
+.slide-info__title {
+  margin: 0;
+  font-size: 62px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.slide-info__desc {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.slide__image {
+  align-self: self-end;
+  position: relative;
+  width: 755px;
+  height: 702px;
+}
+
+.slide__img {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  bottom: 0; /* Позиционируем кнопки внизу слайда */
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  bottom: 60px;
+}
+
+.swiper-button-prev {
+  /* left: 10px; */
+}
+
+.swiper-button-next {
+  /* right: 10px; */
+}
+
+.services {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.services__title {
+  color: var(--dark-blue);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 54px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.servives__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.services__grid-card {
+  height: 300px;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 30px;
+  box-sizing: border-box;
+  line-height: 32px;
+  background-color: rgba(0, 35, 67, 0.4);
+  color: #fff;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card_01 {
+  background-image: url(../images/card_01.png);
+}
+
+.card_02 {
+  background-image: url(../images/card_02.png);
+}
+.card_03 {
+  background-image: url(../images/card_03.png);
+}
+.card_04 {
+  background-image: url(../images/card_04.png);
+}
+.card_05 {
+  background-image: url(../images/card_05.png);
+}
+.card_06 {
+  background-image: url(../images/card_06.png);
+}
+.card_07 {
+  background-image: url(../images/card_07.png);
+}
+.card_08 {
+  background-image: url(../images/card_08.png);
+}
+.card_09 {
+  background-image: url(../images/card_09.png);
+}
+.card_10 {
+  background-image: url(../images/card_10.png);
+}
+.card_11 {
+  background-image: url(../images/card_11.png);
+}
+.card_12 {
+  background-image: url(../images/card_12.png);
+}
+
+.footer {
+  width: 100%;
+  background: rgb(246, 246, 246);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  height: 377px;
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 52px;
+}
+
+.footer__container h1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 31px;
+  margin-top: 0;
+}
+
+.footer__contacts {
+  grid-column: 1/3;
+}
+
+.footer__contacts p {
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.adress {
+  line-height: 18px;
+}
+
+.footer__contacts-numbers {
+  margin-top: 20px;
+}
+
+.footer__contacts-numbers p {
+  margin-bottom: 1px;
+}
+
+.footer__services {
+  grid-column: 3/10;
 }

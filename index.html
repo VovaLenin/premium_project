@@ -69,37 +69,121 @@
                 </g>
               </svg>
             </button>
-            <!-- Пустая кнопка для SVG -->
           </div>
           <div class="separator"></div>
-          <!-- Вертикальная линия -->
+
           <div class="header__contacts-right">
             <div class="contact-info">
               <p class="phone-number">+7 495 249-04-54</p>
-              <!-- Номер телефона -->
+
               <p class="email">info@premium-project.ru</p>
-              <!-- Адрес электронной почты -->
             </div>
           </div>
         </div>
         <button class="header__button">Заказать услугу</button>
       </div>
     </header>
+    <div class="header_placeholder"></div>
 
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
-        <div class="swiper-slide"></div>
+    <section class="banner-slider swiper-container">
+      <div class="banner-slider__wrapper swiper-wrapper">
+        <div class="banner-slider__slide swiper-slide">
+          <div class="slide__main">
+            <div class="slide-info">
+              <img
+                class="slide-triangles slide-triangles__top"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+              <h1 class="slide-info__title">
+                Проектирование инженерных систем
+              </h1>
+              <p class="slide-info__desc">
+                Осуществляем полный цикл проектирования — от эскизного до
+                рабочего
+              </p>
+              <img
+                class="slide-triangles slide-triangles__bottom"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+            </div>
+            <div class="slide__image">
+              <img
+                class="slide__img"
+                src="./src/images/slide-image.png"
+                alt="Builder"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="banner-slider__slide swiper-slide"></div>
+        <div class="banner-slider__slide swiper-slide"></div>
+        <div class="banner-slider__slide swiper-slide"></div>
       </div>
 
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
       <div class="swiper-pagination"></div>
-    </div>
-    <footer></footer>
+    </section>
+    <section class="services">
+      <h1 class="services__title">Услуги</h1>
+      <div class="servives__grid">
+        <div class="services__grid-card card_01">
+          Архитектурно-строительное проектирование
+        </div>
+        <div class="services__grid-card card_02">
+          Проектирование внутренних инженерных систем
+        </div>
+        <div class="services__grid-card card_03">Поставка оборудования</div>
+        <div class="services__grid-card card_04">Авторский надзор</div>
+        <div class="services__grid-card card_05">Revit проектирование</div>
+        <div class="services__grid-card card_06">
+          Разработка технологических решений и концепции проекта
+        </div>
+        <div class="services__grid-card card_07">
+          Получение и оформление исходных данных для проектирования
+        </div>
+        <div class="services__grid-card card_08">
+          Составление технического задания на проектирование
+        </div>
+        <div class="services__grid-card card_09">
+          Выполнение функций генерального проектировщика
+        </div>
+        <div class="services__grid-card card_10">Инженерные изыскания</div>
+        <div class="services__grid-card card_11">Дизайн-проектирование</div>
+        <div class="services__grid-card card_12">
+          Монтаж и пуско-наладочные работы (ПНР)
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__contacts">
+          <h1>Контакты</h1>
+          <p class="adress">
+            125504, г. Москва, Дмитровское ш. 81, 1 эт, ком 14, БЦ "Apart Ville"
+          </p>
+          <p>info@premium-project.ru</p>
+          <div class="footer__contacts-numbers">
+            <p>+7 495 249-04-54</p>
+            <p>+7(906)737-89-41</p>
+            <p>+7(905)725-37-07</p>
+          </div>
+        </div>
+        <div class="footer__services">
+          <h1>Услуги</h1>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/scripts/script.js"></script>
   </body>
 </html>
