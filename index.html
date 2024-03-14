@@ -21,7 +21,7 @@
               <a class="header__link" href="#">О компании</a>
             </li>
             <li class="header__item">
-              <a class="header__link header__link--active" href="#">Услуги</a>
+              <a class="header__link" href="#">Услуги</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="#">Оборудование</a>
@@ -38,7 +38,7 @@
           </ul>
         </nav>
       </div>
-      <div class="header__section">
+      <div class="header__section header__section-left">
         <div class="header__contacts">
           <div class="header__contacts-left">
             <button class="phone-button">
@@ -80,12 +80,88 @@
             </div>
           </div>
         </div>
-        <button class="header__button">Заказать услугу</button>
+        <button class="btn button__order-service">Заказать услугу</button>
       </div>
+      <div class="header__section-portable">
+        <button class="header__phone">
+          <svg
+            width="27.000000"
+            height="25.077820"
+            viewBox="0 0 27 25.0778"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              id="Vector"
+              d="M25.3452 20.9124C25.1387 21.3187 24.8706 21.7024 24.5181 22.0635C23.9219 22.6729 23.2646 23.113 22.5225 23.3951C21.7925 23.6772 21.0015 23.8239 20.1494 23.8239C18.9082 23.8239 17.582 23.5531 16.1826 23.0002C14.7832 22.4472 13.3838 21.7024 11.9971 20.7657C10.5977 19.8177 9.271 18.7682 8.00586 17.6059C6.75244 16.4323 5.62061 15.2022 4.61084 13.9157C3.61279 12.6292 2.80957 11.3427 2.22559 10.0675C1.6416 8.78101 1.34961 7.55093 1.34961 6.37732C1.34961 5.60992 1.49561 4.8764 1.7876 4.19931C2.07959 3.51093 2.54199 2.87894 3.18701 2.3147C3.96582 1.60373 4.81738 1.25391 5.71777 1.25391C6.05859 1.25391 6.39941 1.32162 6.70361 1.45703C7.02002 1.59247 7.2998 1.79559 7.51904 2.08899L10.3418 5.77921C10.561 6.06134 10.7192 6.32089 10.8286 6.56915C10.938 6.80612 10.999 7.04312 10.999 7.25754C10.999 7.52838 10.9141 7.79922 10.7437 8.05878C10.5854 8.31833 10.354 8.58917 10.062 8.86002L9.13721 9.75153C9.00342 9.87567 8.94238 10.0224 8.94238 10.2029C8.94238 10.2932 8.95459 10.3722 8.979 10.4625C9.01562 10.5528 9.05225 10.6205 9.07666 10.6882C9.29541 11.0606 9.67285 11.5458 10.208 12.1327C10.7559 12.7195 11.3398 13.3176 11.9727 13.9157C12.6294 14.5138 13.2622 15.0668 13.9072 15.5746C14.54 16.0711 15.063 16.4097 15.4771 16.6128C15.5376 16.6354 15.6108 16.6693 15.6958 16.7031C15.7935 16.7369 15.8906 16.7482 16 16.7482C16.207 16.7482 16.3652 16.6805 16.499 16.5564L17.4238 15.71C17.728 15.4279 18.02 15.2135 18.2998 15.0781C18.5801 14.9201 18.8599 14.8411 19.1641 14.8411C19.395 14.8411 19.6387 14.8862 19.9062 14.9878C20.1738 15.0894 20.4536 15.2361 20.7578 15.4279L24.7856 18.0799C25.1021 18.283 25.3213 18.52 25.4551 18.8021C25.5767 19.0842 25.6494 19.3664 25.6494 19.6823C25.6494 20.0886 25.5522 20.5062 25.3452 20.9124Z"
+              stroke="#002343"
+              stroke-opacity="1.000000"
+              stroke-width="1.600000"
+            />
+            <g opacity="0.000000">
+              <path
+                id="Vector"
+                d="M27 0L0 0L0 25.0778L27 25.0778L27 0ZM1.6001 23.4778L1.6001 1.60001L25.3999 1.60001L25.3999 23.4778L1.6001 23.4778Z"
+                fill="#002343"
+                fill-opacity="1.000000"
+                fill-rule="evenodd"
+              />
+            </g>
+          </svg>
+        </button>
+        <button id="toggleMenu" class="header__menu">
+          <svg
+            width="27"
+            height="20"
+            viewBox="0 0 27 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.62321 3.24603H25.0786C25.9736 3.24603 26.7014 2.51821 26.7014 1.62321C26.7014 0.728199 25.9736 0 25.0786 0H1.62321C0.728199 0 0 0.728199 0 1.62321C0 2.51821 0.728199 3.24603 1.62321 3.24603Z"
+              fill="#002343"
+            />
+            <path
+              d="M25.0786 8.37679H1.62321C0.728199 8.37679 0 9.10499 0 10C0 10.895 0.728199 11.6228 1.62321 11.6228H25.0786C25.9736 11.6228 26.7014 10.895 26.7014 10C26.7014 9.10499 25.9736 8.37679 25.0786 8.37679Z"
+              fill="#002343"
+            />
+            <path
+              d="M25.0786 16.7536H1.62321C0.728199 16.7536 0 17.4822 0 18.3772C0 19.2722 0.728199 20 1.62321 20H25.0786C25.9736 20 26.7014 19.2722 26.7014 18.3772C26.7014 17.4822 25.9736 16.7536 25.0786 16.7536Z"
+              fill="#002343"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav id="menu" class="header__nav header__nav-portable">
+        <ul class="header__list header__list-portable">
+          <li class="header__item header__item-portable">
+            <a class="header__link header__link-portable" href="#"
+              >О компании</a
+            >
+          </li>
+          <li class="header__item header__item-portable">
+            <a class="header__link header__link-portable" href="#">Услуги</a>
+          </li>
+          <li class="header__item header__item-portable">
+            <a class="header__link header__link" href="#">Оборудование</a>
+          </li>
+          <li class="header__item header__item-portable">
+            <a class="header__link header__link-portable" href="#">Проекты</a>
+          </li>
+          <li class="header__item header__item-portable">
+            <a class="header__link header__link-portable" href="#">Партнеры</a>
+          </li>
+          <li class="header__item header__item-portable">
+            <a class="header__link header__link-portable" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <div class="header_placeholder"></div>
 
-    <section class="banner-slider swiper-container">
+    <section class="swiper banner-slider swiper-container">
       <div class="banner-slider__wrapper swiper-wrapper">
         <div class="banner-slider__slide swiper-slide">
           <div class="slide__main">
@@ -117,53 +193,390 @@
             </div>
           </div>
         </div>
-        <div class="banner-slider__slide swiper-slide"></div>
-        <div class="banner-slider__slide swiper-slide"></div>
-        <div class="banner-slider__slide swiper-slide"></div>
+        <div class="banner-slider__slide swiper-slide">
+          <div class="slide__main">
+            <div class="slide-info">
+              <img
+                class="slide-triangles slide-triangles__top"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+              <h1 class="slide-info__title">
+                Проектирование инженерных систем
+              </h1>
+              <p class="slide-info__desc">
+                Осуществляем полный цикл проектирования — от эскизного до
+                рабочего
+              </p>
+              <img
+                class="slide-triangles slide-triangles__bottom"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+            </div>
+            <div class="slide__image">
+              <img
+                class="slide__img"
+                src="./src/images/slide-image.png"
+                alt="Builder"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="banner-slider__slide swiper-slide">
+          <div class="slide__main">
+            <div class="slide-info">
+              <img
+                class="slide-triangles slide-triangles__top"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+              <h1 class="slide-info__title">
+                Проектирование инженерных систем
+              </h1>
+              <p class="slide-info__desc">
+                Осуществляем полный цикл проектирования — от эскизного до
+                рабочего
+              </p>
+              <img
+                class="slide-triangles slide-triangles__bottom"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+            </div>
+            <div class="slide__image">
+              <img
+                class="slide__img"
+                src="./src/images/slide-image.png"
+                alt="Builder"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="banner-slider__slide swiper-slide">
+          <div class="slide__main">
+            <div class="slide-info">
+              <img
+                class="slide-triangles slide-triangles__top"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+              <h1 class="slide-info__title">
+                Проектирование инженерных систем
+              </h1>
+              <p class="slide-info__desc">
+                Осуществляем полный цикл проектирования — от эскизного до
+                рабочего
+              </p>
+              <img
+                class="slide-triangles slide-triangles__bottom"
+                src="./src/images/slide-triangles.svg"
+                alt="triangles"
+              />
+            </div>
+            <div class="slide__image">
+              <img
+                class="slide__img"
+                src="./src/images/slide-image.png"
+                alt="Builder"
+              />
+            </div>
+            <img
+              class="slide-triangles slide-triangles__right"
+              src="./src/images/slide-triangles-right.svg"
+              alt="triangles"
+            />
+          </div>
+        </div>
       </div>
 
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-navigation">
+        <div class="swiper-button-prev">
+          <svg
+            width="9.000000"
+            height="17.000000"
+            viewBox="0 0 9 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              id="arrow"
+              d="M0.75 10.65L6.48 16.38C6.72 16.62 7.03 16.75 7.36 16.75C7.69 16.75 8.01 16.62 8.25 16.38C8.36 16.27 8.45 16.13 8.52 15.98C8.58 15.82 8.61 15.66 8.61 15.5C8.61 15.33 8.58 15.17 8.52 15.01C8.45 14.86 8.36 14.72 8.25 14.61L2.5 8.88C2.38 8.77 2.28 8.63 2.22 8.48C2.16 8.32 2.13 8.16 2.13 8C2.13 7.83 2.16 7.67 2.22 7.51C2.28 7.36 2.38 7.22 2.5 7.11L8.25 1.38C8.48 1.15 8.61 0.83 8.61 0.5C8.62 0.17 8.48 -0.15 8.25 -0.39C8.02 -0.62 7.7 -0.75 7.37 -0.76C7.04 -0.76 6.72 -0.63 6.48 -0.39L0.75 5.34C0.04 6.05 -0.35 7 -0.35 8C-0.35 8.99 0.04 9.94 0.75 10.65Z"
+              fill="#002343"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg
+            width="9.000000"
+            height="17.000000"
+            viewBox="0 0 9 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs />
+            <path
+              id="arrow"
+              d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+              fill="#002343"
+              fill-opacity="1.000000"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </div>
+      </div>
 
       <div class="swiper-pagination"></div>
     </section>
     <section class="main__services">
       <h1 class="main__services__title">Услуги</h1>
-      <div class="main__servives__grid">
+      <div class="main__services__grid">
         <div class="main__services__grid-card card_01">
           Архитектурно-строительное проектирование
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_02">
           Проектирование внутренних инженерных систем
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_03">
           Поставка оборудования
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
-        <div class="main__services__grid-card card_04">Авторский надзор</div>
+        <div class="main__services__grid-card card_04">
+          Авторский надзор
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
+        </div>
         <div class="main__services__grid-card card_05">
           Revit проектирование
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_06">
-          Разработка технологических решений и концепции проекта
+          Разработка технологических решений<br />
+          и концепции проекта
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_07">
           Получение и оформление исходных данных для проектирования
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_08">
           Составление технического задания на проектирование
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_09">
           Выполнение функций генерального проектировщика
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_10">
           Инженерные изыскания
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_11">
           Дизайн-проектирование
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
         <div class="main__services__grid-card card_12">
           Монтаж и<br />
           пуско-наладочные работы (<br />ПНР)
+          <a href="#" class="card-link">
+            <svg
+              width="9.000000"
+              height="17.000000"
+              viewBox="0 0 9 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="arrow"
+                d="M7.25 5.35L1.51 -0.39C1.27 -0.63 0.96 -0.76 0.63 -0.76C0.3 -0.76 -0.02 -0.63 -0.25 -0.39C-0.37 -0.28 -0.46 -0.14 -0.53 0.01C-0.59 0.17 -0.62 0.33 -0.62 0.5C-0.62 0.66 -0.59 0.82 -0.53 0.98C-0.46 1.13 -0.37 1.27 -0.25 1.38L5.5 7.11C5.61 7.22 5.71 7.36 5.77 7.51C5.83 7.67 5.86 7.83 5.86 8C5.86 8.16 5.83 8.32 5.77 8.48C5.71 8.63 5.61 8.77 5.5 8.88L-0.25 14.61C-0.49 14.84 -0.62 15.16 -0.62 15.49C-0.63 15.82 -0.49 16.14 -0.26 16.38C-0.03 16.61 0.29 16.74 0.62 16.75C0.95 16.75 1.27 16.62 1.51 16.38L7.25 10.65C7.95 9.94 8.34 8.99 8.34 8C8.34 7 7.95 6.05 7.25 5.35Z"
+                fill="#fff"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -172,7 +585,7 @@
         <div class="footer__contacts">
           <h1>Контакты</h1>
           <div class="contacts-info">
-            <p сlass="contact-address">
+            <p>
               125504, г. Москва, Дмитровское ш. 81,<br />
               1 эт, ком 14, БЦ "Apart Ville"
             </p>
@@ -209,9 +622,21 @@
             <a href="#">Система оповещения и трансляции TOA</a>
             <a href="#">Система часофикации BODET</a>
             <a href="#">Системы обратной связи для МГН Premium Push</a>
-            <button class="order-service">Заказать услугу</button>
+            <button class="btn button__order-service footer__button">
+              Заказать услугу
+            </button>
           </div>
         </div>
+      </div>
+      <hr class="footer__separator" />
+      <div class="footer__bottom">
+        <p>© Premium Project, 2023</p>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          >Политика конфиденциальности</a
+        >
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          >Разработка и маркетинг – WebCanape</a
+        >
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
