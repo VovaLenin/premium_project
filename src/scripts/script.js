@@ -8,11 +8,11 @@ var swiper = new Swiper(".swiper-container", {
     clickable: true,
   },
   loop: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   stopOnLastSlide: false,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
 });
 
 document.getElementById("toggleMenu").addEventListener("click", function () {
